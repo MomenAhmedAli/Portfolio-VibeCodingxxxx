@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { addFrameEffect } from '../lib/lenisScrollBus';
+import { publicAsset } from '../lib/assetUrl';
 
 interface OrbitingInterfaces360Props {
   theme?: 'light' | 'dark';
@@ -9,18 +10,18 @@ interface OrbitingInterfaces360Props {
 
 // 12 real high-resolution project UI screens & design mockups across Nurabi, Rivka & Tawreedat
 const SITE_PROJECT_IMAGES: string[] = [
-  '/assets/aistudio/tawreed_hero_dashboard.png',
-  '/assets/aistudio/Arabic_Blue_Online_Learning_Platform_2c685461.png',
-  '/assets/aistudio/Rivka_Desert_App_Showcase_0c2aebe6.png',
-  '/assets/aistudio/Modern_Arabic_Supplier_Marketplace_Dashboard_508fd2df.png',
-  '/assets/aistudio/tawreed_features.png',
-  '/assets/aistudio/nurabi_education_types.png',
-  '/assets/aistudio/hook_70c6e796.png',
-  '/assets/aistudio/rivka_a6cdcbf7.png',
-  '/assets/aistudio/tawreed_pricing.png',
-  '/assets/aistudio/nurabi_testimonials.png',
-  '/assets/aistudio/tawreed_metrics_partners.png',
-  '/assets/aistudio/tawreed_faq_footer.png',
+  publicAsset('assets/aistudio/tawreed_hero_dashboard.png'),
+  publicAsset('assets/aistudio/Arabic_Blue_Online_Learning_Platform_2c685461.png'),
+  publicAsset('assets/aistudio/Rivka_Desert_App_Showcase_0c2aebe6.png'),
+  publicAsset('assets/aistudio/Modern_Arabic_Supplier_Marketplace_Dashboard_508fd2df.png'),
+  publicAsset('assets/aistudio/tawreed_features.png'),
+  publicAsset('assets/aistudio/nurabi_education_types.png'),
+  publicAsset('assets/aistudio/hook_70c6e796.png'),
+  publicAsset('assets/aistudio/rivka_a6cdcbf7.png'),
+  publicAsset('assets/aistudio/tawreed_pricing.png'),
+  publicAsset('assets/aistudio/nurabi_testimonials.png'),
+  publicAsset('assets/aistudio/tawreed_metrics_partners.png'),
+  publicAsset('assets/aistudio/tawreed_faq_footer.png'),
 ];
 
 function drawRoundedClip(

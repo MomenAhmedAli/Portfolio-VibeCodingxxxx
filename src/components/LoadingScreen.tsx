@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { publicAsset } from '../lib/assetUrl';
 
 interface LoadingScreenProps {
   theme: 'light' | 'dark';
@@ -6,7 +7,7 @@ interface LoadingScreenProps {
   onComplete: () => void;
 }
 
-const CRITICAL_ASSETS = ['/assets/aistudio/moamen_hero_clean.png'];
+const CRITICAL_ASSETS = [publicAsset('assets/aistudio/moamen_hero_clean.png')];
 
 // Each letter of "Moamen." drawn sequentially stroke-by-stroke like pen handwriting
 const LETTER_STROKES = [

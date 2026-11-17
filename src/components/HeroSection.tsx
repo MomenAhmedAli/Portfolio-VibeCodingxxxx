@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight } from 'lucide-react';
 import { OrbitingInterfaces360 } from './OrbitingInterfaces360';
+import { publicAsset } from '../lib/assetUrl';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -244,7 +245,7 @@ export function HeroSection({
             className="relative w-[310px] sm:w-[440px] md:w-[560px] lg:w-[650px] xl:w-[700px] translate-x-[5%] flex items-end justify-center [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)] md:[mask-image:none]"
           >
             <img
-              src="/assets/aistudio/moamen_hero_clean.png"
+              src={publicAsset('assets/aistudio/moamen_hero_clean.png')}
               alt="Moamen — Product & UX Designer"
               className="w-full h-auto block object-contain object-bottom pointer-events-none select-none drop-shadow-[0_22px_44px_rgba(6,13,61,0.42)]"
             />

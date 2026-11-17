@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Project } from '../types';
 import { RollingNumber } from './TypewriterEffects';
 import { DomSyncWebGL, DomSyncProjectSpec } from './DomSyncWebGL';
+import { publicAsset } from '../lib/assetUrl';
 import { ProjectLogoReveal } from './ProjectLogoReveal';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -69,19 +70,19 @@ export const PROJECTS_DATA: WorkItem[] = [
     colorTheme: 'from-[#0b3b60] via-[#092947] to-[#041526]',
     accentBg: '#092b4a',
     previewType: 'arabic-edtech',
-    imageSrc: '/assets/aistudio/Arabic_Blue_Online_Learning_Platform_2c685461.png',
-    hoverImageSrc: '/assets/aistudio/Arabic_Calligraphy_and_Geometric_Emblem_1c258821.png',
+    imageSrc: publicAsset('assets/aistudio/Arabic_Blue_Online_Learning_Platform_2c685461.png'),
+    hoverImageSrc: publicAsset('assets/aistudio/Arabic_Calligraphy_and_Geometric_Emblem_1c258821.png'),
     behanceCaseStudyUrl:
       'https://www.behance.net/gallery/256925003/Nurabi-Arabic-Education-platform-Case-Study',
     extraGallery: [
       {
-        src: '/assets/aistudio/nurabi_education_types.png',
+        src: publicAsset('assets/aistudio/nurabi_education_types.png'),
         alt: 'Nurabi — Egyptian & International School Education Curricula (المناهج الدراسية)',
         captionLeft: 'NURABI // KIND OF SCHOOL EDUCATION',
         captionRight: 'المناهج الدراسية',
       },
       {
-        src: '/assets/aistudio/nurabi_testimonials.png',
+        src: publicAsset('assets/aistudio/nurabi_testimonials.png'),
         alt: 'Nurabi — Parent & Student Testimonials (كلام الناس عنا)',
         captionLeft: 'NURABI // TESTIMONIALS',
         captionRight: 'كلام الناس عنا',
@@ -136,8 +137,8 @@ export const PROJECTS_DATA: WorkItem[] = [
     colorTheme: 'from-[#be976b] via-[#a3794f] to-[#7a5530]',
     accentBg: '#96714a',
     previewType: 'desert-app',
-    imageSrc: '/assets/aistudio/Rivka_Desert_App_Showcase_0c2aebe6.png',
-    hoverImageSrc: '/assets/aistudio/rivka_a6cdcbf7.png',
+    imageSrc: publicAsset('assets/aistudio/Rivka_Desert_App_Showcase_0c2aebe6.png'),
+    hoverImageSrc: publicAsset('assets/aistudio/rivka_a6cdcbf7.png'),
   },
   {
     id: 'tawreed',
@@ -187,40 +188,40 @@ export const PROJECTS_DATA: WorkItem[] = [
     colorTheme: 'from-[#3b0d16] via-[#24131c] to-[#111827]',
     accentBg: '#5e1424',
     previewType: 'tawreed-b2b',
-    imageSrc: '/assets/aistudio/hook_70c6e796.png',
-    hoverImageSrc: '/assets/aistudio/Modern_Arabic_Supplier_Marketplace_Dashboard_508fd2df.png',
+    imageSrc: publicAsset('assets/aistudio/hook_70c6e796.png'),
+    hoverImageSrc: publicAsset('assets/aistudio/Modern_Arabic_Supplier_Marketplace_Dashboard_508fd2df.png'),
     showcaseVideo: {
-      src: '/assets/aistudio/web_8d385e24.mp4',
+      src: publicAsset('assets/aistudio/web_8d385e24.mp4'),
       captionLeft: 'TAWREEDAT // FULL SITE MOTION',
       captionRight: 'الحركة والتفاعل الحي',
     },
     extraGallery: [
       {
-        src: '/assets/aistudio/tawreed_hero_dashboard.png',
+        src: publicAsset('assets/aistudio/tawreed_hero_dashboard.png'),
         alt: 'Tawreedat — Hero, Control Dashboard & Verified Factory Logos',
         captionLeft: 'TAWREEDAT // HERO & CONTROL DASHBOARD',
         captionRight: 'كل مصانع مصر في إيدك',
       },
       {
-        src: '/assets/aistudio/tawreed_features.png',
+        src: publicAsset('assets/aistudio/tawreed_features.png'),
         alt: 'Tawreedat — Six Core B2B Procurement & Tracking Capabilities',
         captionLeft: 'TAWREEDAT // CORE B2B CAPABILITIES',
         captionRight: 'مميزات المنصة والتتبع',
       },
       {
-        src: '/assets/aistudio/tawreed_metrics_partners.png',
+        src: publicAsset('assets/aistudio/tawreed_metrics_partners.png'),
         alt: 'Tawreedat — Live Network Metrics & Success Partners Testimonials',
         captionLeft: 'TAWREEDAT // METRICS & PARTNERS',
         captionRight: 'شركئنا في نجاح',
       },
       {
-        src: '/assets/aistudio/tawreed_pricing.png',
+        src: publicAsset('assets/aistudio/tawreed_pricing.png'),
         alt: 'Tawreedat — Supplier Subscription Plans (Free, Pro, Premium)',
         captionLeft: 'TAWREEDAT // SUBSCRIPTION PLANS',
         captionRight: 'الاشتراكات والباقات',
       },
       {
-        src: '/assets/aistudio/tawreed_faq_footer.png',
+        src: publicAsset('assets/aistudio/tawreed_faq_footer.png'),
         alt: 'Tawreedat — Frequently Asked Questions & Footer Architecture',
         captionLeft: 'TAWREEDAT // FAQ & FOOTER',
         captionRight: 'الأسئلة الشائعة',
